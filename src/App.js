@@ -5,7 +5,7 @@ import { useState } from "react";
 import Countdown from "react-countdown";
 
 function App() {
-  const [newYearMessage, setNewYearMessage] = useState(["Good Bye, 2023👋"]);
+  const [newYearMessage, setNewYearMessage] = useState(["Good Bye, 2023"]);
 
   const particleInit = async (engine) => {
     await loadFireworksPreset(engine);
@@ -26,12 +26,14 @@ function App() {
           <Typewriter
             words={newYearMessage}
             loop={false}
+            cursorStyle={"💕"}
+            cursor
           />
         </span>
         <div className="z-50 text-red-600 font-bold text-4xl">
           <Countdown date={Date.now() + timeLeft()} onComplete={() => 
           {setNewYearMessage([
-            "Happy New Year Ayang💕"
+            "Happy New Year Ayang"
           ])}} />
         </div>
       </div>
