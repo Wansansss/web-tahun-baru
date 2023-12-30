@@ -26,7 +26,7 @@ function App() {
           <Typewriter
             words={newYearMessage}
             loop={false}
-            cursorStyle={"❤💖"}
+            cursorStyle={"❤"}
             cursor
           />
         </span>
