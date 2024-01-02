@@ -5,7 +5,7 @@ import { useState } from "react";
 import Countdown from "react-countdown";
 
 function App() {
-  const [newYearMessage, setNewYearMessage] = useState(["Countdown New Year"]);
+  const [newYearMessage, setNewYearMessage] = useState(["Countdown"," New Year"]);
 
   const particleInit = async (engine) => {
     await loadFireworksPreset(engine);
